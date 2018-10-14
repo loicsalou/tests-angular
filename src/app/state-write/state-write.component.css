@@ -1,0 +1,22 @@
+fieldset {
+  border: thin solid grey;
+  border-radius: 5px;
+}
+
+div > div {
+  display: flex;
+}
+
+label {
+  flex-grow: 0;
+  margin-right: 1rem;
+}
+
+input {
+  flex-grow: .2;
+  max-width: 25rem;
+}
+
+button {
+  display: block;
+}

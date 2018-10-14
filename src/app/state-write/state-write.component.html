@@ -1,0 +1,40 @@
+<div>
+  <div>
+    <label for="s1d1">State 1, data1</label>
+    <input class="form-control form-control-sm"
+           id="s1d1"
+           type="text"
+           [autofocus]="'true'"
+           [(ngModel)]="s1d1"/>
+    <button type="button" class="btn btn-light" (click)="sendS1d1()">Modifier S1d1</button>
+  </div>
+  
+  <div>
+    <label for="s1d2">State 1, data2</label>
+    <input class="form-control form-control-sm"
+           id="s1d2"
+           type="text"
+           [(ngModel)]="s1d2"/>
+    <button type="button" class="btn btn-light" (click)="sendS1d2()">Modifier S1d2</button>
+  </div>
+  
+  <div>
+    <label for="s2d1">State 2, data1</label>
+    <input class="form-control form-control-sm"
+           id="s2d1"
+           type="text"
+           [(ngModel)]="s2d1"/>
+    <button type="button" class="btn btn-light" (click)="sendS2d1()">Modifier S2d1</button>
+  </div>
+  
+  <div>
+    <label for="s2d2">State 2, data2</label>
+    <input class="form-control form-control-sm"
+           id="s2d2"
+           type="text"
+           [(ngModel)]="s2d2"/>
+    <button type="button" class="btn btn-light" (click)="sendS2d2()">Modifier S2d2</button>
+  </div>
+  
+  <button type="button" class="btn btn-info" (click)="sendAll()">Modifier tout</button>
+</div>

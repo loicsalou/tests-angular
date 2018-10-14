@@ -1,0 +1,21 @@
+<h2>tests NGRX</h2>
+
+<blockquote>Cette page permet de tester les sélecteurs NGRX. Quand on change un élément du state, seul les Observables
+  portant sur l'élément modifié doivent émettre</blockquote>
+
+<button type="button" class="btn btn-primary" (click)="toggleNgrx()">
+  {{testNgrx ? 'Ne plus tester NGRX' : 'Tester NGRX'}}
+</button>
+
+<div *ngIf="!testNgrx">
+  <div>
+    <button type="button" class="btn btn-light" (click)="updateState()">Envoyer un changement de state</button>
+  </div>
+</div>
+
+<fieldset *ngIf="testNgrx">
+  <legend>Test NGRX: Observer ce qui change dans le state</legend>
+  <app-state-read></app-state-read>
+  <app-state-write></app-state-write>
+</fieldset>
+
